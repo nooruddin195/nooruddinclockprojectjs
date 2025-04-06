@@ -1,0 +1,70 @@
+/* Reset some styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(circle, rgba(26, 32, 44, 1) 0%, rgba(48, 54, 65, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+/* Clock container styling */
+.clock-container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 50px rgba(0, 255, 255, 0.2);
+  animation: fadeIn 2s ease-out;
+}
+
+/* Main clock style */
+.clock {
+  font-size: 6em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+/* Date styling */
+.date {
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #00e0e0;
+  text-transform: capitalize;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 50px rgba(0, 255, 255, 1);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  }
+}
+
